@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Object Model</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section class="container">
+        <h1 id="header" class="header">To-Do App</h1>
+        <!-- Add New Task Input -->
+        <form class="new-task-container box">
+            <label for="new-task">Add New Task</label>
+            <input type="text" id="new-task" required>
+            <input type="submit" id="addTask" value="Add Task"/>
+        </form>
+        
+        <!-- Incomplete List -->
+        <div class="todo-list box">
+            <h2 id="header">Incomplete Tasks</h2>
+            <ul id="items">
+                <li class="item">
+                    <input type="checkbox"/><label>Create a landing page</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox"/><label>Add CSS3 Animation</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox"/><label>Add Slider</label>
+                </li>
+            </ul>
+        </div>
+  
+            <!-- Complete List -->
+        <div class="complete-list box">
+            <h2>Completed Tasks</h2>
+            <ul>
+                <li class="item">Complete Design <button class="delete">Delete</button></li>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
