@@ -1,8 +1,8 @@
 // Select element and assign them to variable
-let newTask = document.querySelector('new-task');
+let newTask = document.querySelector('#new-task');
 let form = document.querySelector('form');
-let todoUl = document.querySelector('items');
-let completeUl = document.querySelector('complete-list ul');
+let todoUl = document.querySelector('#items');
+let completeUl = document.querySelector('.complete-list ul');
 
 // Create Task Function
 let createTask = function(task){
@@ -58,7 +58,7 @@ let bindInCompleteItems = function(taskItem, checkBoxClick){
 
 // Task Delete Action Function
 let bindCompleteItems = function(taskItem, deleteBtnClick){
-    let deleteButton = taskItem.querySelector('delete');
+    let deleteButton = taskItem.querySelector('.delete');
     deleteButton.onclick = deleteBtnClick;
 }
 
